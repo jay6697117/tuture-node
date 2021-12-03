@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node demos/timer/timer.js -t 5 -m 大家晚上好啊!",
-    "lint:fix": "eslint --fix --ext .js,.ts,.jsx,.vue ./"
+    "lint:fix": "eslint --ext .js,.ts,.jsx,.vue ./"
   },
   "keywords": [],
   "author": "",

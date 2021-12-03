@@ -31,8 +31,7 @@
   },
   "husky": {
     "hooks": {
-      "commit-msg": "npm run lint:fix",
-      "pre-commit": "lint-staged"
+      "commit-msg": "lint-staged"
     }
   }
 }

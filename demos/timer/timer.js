@@ -1,5 +1,6 @@
 const commander = require('commander'); // node_modules包 包名
 const ora = require('ora'); // node_modules包 包名
+const alert = require('alert');
 // const EventEmitter = require('events').EventEmitter;
 // const emitter = new EventEmitter();
 const printProgramInfo = require('./info'); // 本地包 相对路径
@@ -32,6 +33,7 @@ const spinner = ora('正在加载中，请稍后 ...').start();
 setTimeout(() => {
   spinner.stop();
   console.log(commander.message);
+  alert(commander.message);
   // // 触发 connect 事件，并且加上一个参数（即上面的 param
   // emitter.emit('connect', '张金辉');
 }, commander.time * 1000);
@@ -39,6 +41,7 @@ setTimeout(() => {
 // process全局对象监听 exit 事件，注册回调函数
 process.on('exit', () => {
   console.log('下次再见啦');
+  alert('下次再见啦');
   console.log('\n');
 });
 
